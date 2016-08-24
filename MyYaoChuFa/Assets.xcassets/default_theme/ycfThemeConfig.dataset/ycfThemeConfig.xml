@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<YCFTheme>
+    <!--========== homePage ==========-->
+    <homePage>
+        <searchBar color = "ffffff" left = "12" right = "-7" height = "28">
+            
+            <input color="ffffff" font_size = "11" bold = "false" textColor = "8d8f96" placeHolder = "周末去哪玩？" placeHolderColor = "bda895" placeHolder_font_size = "12" placeHolder_bold = "false" top = "8" left = "8" />
+            
+        </searchBar>
+
+    </homePage>
+    
+    <!--========== destinationPage 目的地==========-->
+    <destinationPage>
+        
+    </destinationPage>
+    
+    <!--========== topicsPage 发现 ==========-->
+    <topicsPage>
+        <searchBar color = "ffffff" left = "12" right = "-7" height = "28">
+            
+            <input color="ffffff" font_size = "11" bold = "false" textColor = "8d8f96" placeHolder = "搜索目的地/景点/酒店等" placeHolderColor = "bda895" placeHolder_font_size = "12" placeHolder_bold = "false" top = "8" left = "8" />
+            
+        </searchBar>
+    </topicsPage>
+    
+    <!--========== myPage 我的==========-->
+    <myPage>
+        <!--========== 下拉时，头图后面的背景色，跟头图顶边的颜色一样 ==========-->
+        <headerBgView color = "fab82a" />
+    </myPage>
+    
+    
+    <!--========== navBar 导航栏==========-->
+    <navBar>
+        <!--========== 默认导航栏==========-->
+        <label font_size = "18" bold = "false" textColor = "574324" />
+        <navBarBtn>
+            <normalLabel color="ffffff" font_size = "14" bold = "false" textColor = "ff9000" />
+            
+            <selectedLabel color="ffffff" font_size = "14" bold = "false" textColor = "ff9000" />
+            
+        </navBarBtn>
+        
+        <!--========== 一级页面导航栏==========-->
+        <firstPage>
+            <label font_size = "18" bold = "false" textColor = "574324" />
+            <navBarBtn>
+                <normalLabel font_size = "14" bold = "false" textColor = "ff9000" />
+                
+                <selectedLabel font_size = "14" bold = "false" textColor = "ff9000" />
+                
+            </navBarBtn>
+        </firstPage>
+    </navBar>
+    
+    <!--========== tabBar 底部tab==========-->
+    <tabBar>
+        <!-- tabBar -->
+        <tabBarBtn titleEdgeInsets = "35,0,5,0" contentEdgeInsets = "0,0,0,0" imageEdgeInsets = "0,0,0,0" >
+            
+            <normalLabel color="ffffff" font_size = "9" bold = "false" textColor = "876c52" />
+            
+            <selectedLabel color="ffffff" font_size = "9" bold = "false" textColor = "ff9000"/>
+            
+        </tabBarBtn>
+    </tabBar>
+    
+    <!--========== list ==========-->
+    <list>
+    </list>
+    
+    <!--========== detail ==========-->
+    <detail>
+    </detail>
+    
+</YCFTheme>
