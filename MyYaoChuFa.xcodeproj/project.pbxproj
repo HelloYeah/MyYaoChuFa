@@ -20,6 +20,9 @@
 		B4E6930A1D6D9B6700C48D9B /* buying_pop_wait_icon.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4E693091D6D9B6700C48D9B /* buying_pop_wait_icon.gif */; };
 		B4E6930C1D6D9B7800C48D9B /* refresh_bg.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4E6930B1D6D9B7800C48D9B /* refresh_bg.gif */; };
 		B4E6930E1D6D9B9500C48D9B /* detail_top_img_default@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B4E6930D1D6D9B9500C48D9B /* detail_top_img_default@2x.gif */; };
+		B4E693261D6DA2D800C48D9B /* HYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E693251D6DA2D800C48D9B /* HYTabBarController.m */; };
+		B4E693291D6DA2ED00C48D9B /* HYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E693281D6DA2ED00C48D9B /* HYTabBar.m */; };
+		B4E6932D1D6DA47C00C48D9B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E6932C1D6DA47C00C48D9B /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		B4E693091D6D9B6700C48D9B /* buying_pop_wait_icon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = buying_pop_wait_icon.gif; sourceTree = "<group>"; };
 		B4E6930B1D6D9B7800C48D9B /* refresh_bg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = refresh_bg.gif; sourceTree = "<group>"; };
 		B4E6930D1D6D9B9500C48D9B /* detail_top_img_default@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "detail_top_img_default@2x.gif"; sourceTree = "<group>"; };
+		B4E693241D6DA2D800C48D9B /* HYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBarController.h; sourceTree = "<group>"; };
+		B4E693251D6DA2D800C48D9B /* HYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBarController.m; sourceTree = "<group>"; };
+		B4E693271D6DA2ED00C48D9B /* HYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTabBar.h; sourceTree = "<group>"; };
+		B4E693281D6DA2ED00C48D9B /* HYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTabBar.m; sourceTree = "<group>"; };
+		B4E6932B1D6DA47C00C48D9B /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		B4E6932C1D6DA47C00C48D9B /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,12 @@
 		B4E692D11D6D980200C48D9B /* MyYaoChuFa */ = {
 			isa = PBXGroup;
 			children = (
+				B4E6930F1D6DA1CB00C48D9B /* Main */,
+				B4E693131D6DA1F900C48D9B /* Home */,
+				B4E693171D6DA24400C48D9B /* Destination */,
+				B4E6931B1D6DA29500C48D9B /* Discover */,
+				B4E6931F1D6DA2B700C48D9B /* Me */,
+				B4E6932A1D6DA46C00C48D9B /* Category */,
 				B4E692D51D6D980200C48D9B /* AppDelegate.h */,
 				B4E692D61D6D980200C48D9B /* AppDelegate.m */,
 				B4E692D81D6D980200C48D9B /* ViewController.h */,
@@ -153,6 +168,175 @@
 				B4E692F91D6D980200C48D9B /* Info.plist */,
 			);
 			path = MyYaoChuFaUITests;
+			sourceTree = "<group>";
+		};
+		B4E6930F1D6DA1CB00C48D9B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693101D6DA1CB00C48D9B /* Controller */,
+				B4E693111D6DA1CB00C48D9B /* Model */,
+				B4E693121D6DA1CB00C48D9B /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B4E693101D6DA1CB00C48D9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693241D6DA2D800C48D9B /* HYTabBarController.h */,
+				B4E693251D6DA2D800C48D9B /* HYTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E693111D6DA1CB00C48D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E693121D6DA1CB00C48D9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693271D6DA2ED00C48D9B /* HYTabBar.h */,
+				B4E693281D6DA2ED00C48D9B /* HYTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E693131D6DA1F900C48D9B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693141D6DA1F900C48D9B /* Controller */,
+				B4E693151D6DA1F900C48D9B /* Model */,
+				B4E693161D6DA1F900C48D9B /* View */,
+			);
+			name = Home;
+			path = Main/Home;
+			sourceTree = "<group>";
+		};
+		B4E693141D6DA1F900C48D9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E693151D6DA1F900C48D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E693161D6DA1F900C48D9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E693171D6DA24400C48D9B /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693181D6DA24400C48D9B /* Controller */,
+				B4E693191D6DA24400C48D9B /* Model */,
+				B4E6931A1D6DA24400C48D9B /* View */,
+			);
+			path = Destination;
+			sourceTree = "<group>";
+		};
+		B4E693181D6DA24400C48D9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E693191D6DA24400C48D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E6931A1D6DA24400C48D9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E6931B1D6DA29500C48D9B /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B4E6931C1D6DA29500C48D9B /* Controller */,
+				B4E6931D1D6DA29500C48D9B /* Model */,
+				B4E6931E1D6DA29500C48D9B /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B4E6931C1D6DA29500C48D9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E6931D1D6DA29500C48D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E6931E1D6DA29500C48D9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E6931F1D6DA2B700C48D9B /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				B4E693201D6DA2B700C48D9B /* Controller */,
+				B4E693211D6DA2B700C48D9B /* Model */,
+				B4E693221D6DA2B700C48D9B /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B4E693201D6DA2B700C48D9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4E693211D6DA2B700C48D9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4E693221D6DA2B700C48D9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4E6932A1D6DA46C00C48D9B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B4E6932B1D6DA47C00C48D9B /* UIView+Frame.h */,
+				B4E6932C1D6DA47C00C48D9B /* UIView+Frame.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +406,7 @@
 				TargetAttributes = {
 					B4E692CE1D6D980200C48D9B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W55448EFBF;
 					};
 					B4E692E71D6D980200C48D9B = {
 						CreatedOnToolsVersion = 7.2;
@@ -290,8 +475,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E6932D1D6DA47C00C48D9B /* UIView+Frame.m in Sources */,
+				B4E693261D6DA2D800C48D9B /* HYTabBarController.m in Sources */,
 				B4E692DA1D6D980200C48D9B /* ViewController.m in Sources */,
 				B4E692D71D6D980200C48D9B /* AppDelegate.m in Sources */,
+				B4E693291D6DA2ED00C48D9B /* HYTabBar.m in Sources */,
 				B4E692D41D6D980200C48D9B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,10 +619,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyYaoChuFa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.MyYaoChuFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -442,10 +633,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyYaoChuFa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.MyYaoChuFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
