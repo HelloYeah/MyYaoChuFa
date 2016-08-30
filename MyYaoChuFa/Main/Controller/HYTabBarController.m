@@ -9,6 +9,7 @@
 #import "HYTabBarController.h"
 #import "ViewController.h"
 #import "HYTabBar.h"
+#import "HYHomeVC.h"
 #define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 @interface HYTabBarController ()<HYTabBarDelegate>
 
@@ -18,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addChildVc:[[ViewController alloc] init] title:@"首页" image:@"tab_bar_home_icon" selectedImage:@"tab_bar_home_icon_current"];
+    [self addChildVc:[[HYHomeVC alloc] init] title:nil image:@"tab_bar_home_icon" selectedImage:@"tab_bar_home_icon_current"];
     [self addChildVc:[[ViewController alloc] init] title:@"目的地" image:@"tab_bar_around_icon" selectedImage:@"tab_bar_around_icon_current"];
     [self addChildVc:[[ViewController alloc] init] title:@"发现" image:@"tab_bar_discover_icon" selectedImage:@"tab_bar_discover_icon_current"];
     [self addChildVc:[[ViewController alloc] init] title:@"我的" image:@"tab_bar_my_icon" selectedImage:@"tab_bar_my_icon_current"];

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B49B144A1D6E874D0052FBE3 /* UIViewController+NavBarHidden.m in Sources */ = {isa = PBXBuildFile; fileRef = B49B14491D6E874D0052FBE3 /* UIViewController+NavBarHidden.m */; };
+		B49B14511D6E8B230052FBE3 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B49B14501D6E8B230052FBE3 /* 2.jpg */; };
+		B49B14681D6EA2E20052FBE3 /* HYHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49B14651D6EA2E20052FBE3 /* HYHomeVC.m */; };
+		B49B146B1D6EA3010052FBE3 /* HYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B49B146A1D6EA3010052FBE3 /* HYViewController.m */; };
 		B4E692D41D6D980200C48D9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E692D31D6D980200C48D9B /* main.m */; };
 		B4E692D71D6D980200C48D9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E692D61D6D980200C48D9B /* AppDelegate.m */; };
 		B4E692DA1D6D980200C48D9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E692D91D6D980200C48D9B /* ViewController.m */; };
@@ -43,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B49B14481D6E874D0052FBE3 /* UIViewController+NavBarHidden.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavBarHidden.h"; sourceTree = "<group>"; };
+		B49B14491D6E874D0052FBE3 /* UIViewController+NavBarHidden.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavBarHidden.m"; sourceTree = "<group>"; };
+		B49B14501D6E8B230052FBE3 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		B49B14641D6EA2E20052FBE3 /* HYHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYHomeVC.h; sourceTree = "<group>"; };
+		B49B14651D6EA2E20052FBE3 /* HYHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYHomeVC.m; sourceTree = "<group>"; };
+		B49B14691D6EA3010052FBE3 /* HYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYViewController.h; sourceTree = "<group>"; };
+		B49B146A1D6EA3010052FBE3 /* HYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYViewController.m; sourceTree = "<group>"; };
 		B4E692CF1D6D980200C48D9B /* MyYaoChuFa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyYaoChuFa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E692D31D6D980200C48D9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B4E692D51D6D980200C48D9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +108,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B49B14621D6EA2E20052FBE3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B49B14631D6EA2E20052FBE3 /* Controller */,
+				B49B14661D6EA2E20052FBE3 /* Model */,
+				B49B14671D6EA2E20052FBE3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B49B14631D6EA2E20052FBE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B49B14691D6EA3010052FBE3 /* HYViewController.h */,
+				B49B146A1D6EA3010052FBE3 /* HYViewController.m */,
+				B49B14641D6EA2E20052FBE3 /* HYHomeVC.h */,
+				B49B14651D6EA2E20052FBE3 /* HYHomeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B49B14661D6EA2E20052FBE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B49B14671D6EA2E20052FBE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B4E692C61D6D980200C48D9B = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B4E6930F1D6DA1CB00C48D9B /* Main */,
-				B4E693131D6DA1F900C48D9B /* Home */,
+				B49B14621D6EA2E20052FBE3 /* Home */,
 				B4E693171D6DA24400C48D9B /* Destination */,
 				B4E6931B1D6DA29500C48D9B /* Discover */,
 				B4E6931F1D6DA2B700C48D9B /* Me */,
@@ -142,6 +188,7 @@
 		B4E692D21D6D980200C48D9B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B49B14501D6E8B230052FBE3 /* 2.jpg */,
 				B4E6930D1D6D9B9500C48D9B /* detail_top_img_default@2x.gif */,
 				B4E6930B1D6D9B7800C48D9B /* refresh_bg.gif */,
 				B4E693091D6D9B6700C48D9B /* buying_pop_wait_icon.gif */,
@@ -201,38 +248,6 @@
 			children = (
 				B4E693271D6DA2ED00C48D9B /* HYTabBar.h */,
 				B4E693281D6DA2ED00C48D9B /* HYTabBar.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B4E693131D6DA1F900C48D9B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B4E693141D6DA1F900C48D9B /* Controller */,
-				B4E693151D6DA1F900C48D9B /* Model */,
-				B4E693161D6DA1F900C48D9B /* View */,
-			);
-			name = Home;
-			path = Main/Home;
-			sourceTree = "<group>";
-		};
-		B4E693141D6DA1F900C48D9B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B4E693151D6DA1F900C48D9B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B4E693161D6DA1F900C48D9B /* View */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,6 +348,8 @@
 		B4E6932A1D6DA46C00C48D9B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B49B14481D6E874D0052FBE3 /* UIViewController+NavBarHidden.h */,
+				B49B14491D6E874D0052FBE3 /* UIViewController+NavBarHidden.m */,
 				B4E6932B1D6DA47C00C48D9B /* UIView+Frame.h */,
 				B4E6932C1D6DA47C00C48D9B /* UIView+Frame.m */,
 			);
@@ -446,6 +463,7 @@
 				B4E6930E1D6D9B9500C48D9B /* detail_top_img_default@2x.gif in Resources */,
 				B4E692E21D6D980200C48D9B /* LaunchScreen.storyboard in Resources */,
 				B4E693061D6D9AB800C48D9B /* city.plist in Resources */,
+				B49B14511D6E8B230052FBE3 /* 2.jpg in Resources */,
 				B4E6930C1D6D9B7800C48D9B /* refresh_bg.gif in Resources */,
 				B4E692DF1D6D980200C48D9B /* Assets.xcassets in Resources */,
 				B4E693081D6D9AD800C48D9B /* Provinces.plist in Resources */,
@@ -475,7 +493,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49B14681D6EA2E20052FBE3 /* HYHomeVC.m in Sources */,
+				B49B144A1D6E874D0052FBE3 /* UIViewController+NavBarHidden.m in Sources */,
 				B4E6932D1D6DA47C00C48D9B /* UIView+Frame.m in Sources */,
+				B49B146B1D6EA3010052FBE3 /* HYViewController.m in Sources */,
 				B4E693261D6DA2D800C48D9B /* HYTabBarController.m in Sources */,
 				B4E692DA1D6D980200C48D9B /* ViewController.m in Sources */,
 				B4E692D71D6D980200C48D9B /* AppDelegate.m in Sources */,
@@ -622,6 +643,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyYaoChuFa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.MyYaoChuFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +658,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyYaoChuFa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yeliang.MyYaoChuFa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -710,6 +733,7 @@
 				B4E692FE1D6D980200C48D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4E692FF1D6D980200C48D9B /* Build configuration list for PBXNativeTarget "MyYaoChuFaTests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +742,7 @@
 				B4E693011D6D980200C48D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B4E693021D6D980200C48D9B /* Build configuration list for PBXNativeTarget "MyYaoChuFaUITests" */ = {
 			isa = XCConfigurationList;
@@ -726,6 +751,7 @@
 				B4E693041D6D980200C48D9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
