@@ -7,10 +7,9 @@
 //
 
 #import "HYHomeVC.h"
-//#import "UIViewController+NavBarHidden.h"
-#import "HYViewController.h"
-@interface HYHomeVC () <UITableViewDataSource>
-@property (nonatomic,weak) UITableView  * tableView;
+
+@interface HYHomeVC () <UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic,strong) UITableView  * tableView;
 @end
 
 @implementation HYHomeVC
@@ -18,44 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     [self setKeyScrollView:self.tableView scrolOffsetY:600 options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
-    //设置tableView的头部视图
-    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 250)];
-    imageView.image = [UIImage imageNamed:@"2.jpg"];
-    self.tableView.tableHeaderView = imageView;
-
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"LaunchImage-700"] forBarMetrics:UIBarMetricsDefault];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-//    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
-   
-
+    [self.view addSubview:self.tableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-- (void)viewDidAppear:(BOOL)animated{
-   
-    [super viewDidAppear:animated];
-//    [self setInViewWillAppear];
-}
-
-- (void)viewDidDisappear:(BOOL)animated{
-    
-    [super viewDidDisappear:animated];
-//    [self setInViewWillDisappear];
-}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 100;
 }
 
@@ -73,10 +45,13 @@
 - (UITableView *)tableView{
     
     if (!_tableView) {
-        UITableView * tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
-        [self.view addSubview:tableView];
-        tableView.dataSource = self;
-        _tableView = tableView;
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        //设置tableView的头部视图
+        UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 0, 250)];
+        imageView.image = [UIImage imageNamed:@"2.jpg"];
+        _tableView.tableHeaderView = imageView;
     }
     return _tableView;
 }

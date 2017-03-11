@@ -6,8 +6,8 @@
 //  Copyright © 2016年 HY. All rights reserved.
 //
 
-#import "HYViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface HYHomeVC : HYViewController
+@interface HYHomeVC : UIViewController
 
 @end
